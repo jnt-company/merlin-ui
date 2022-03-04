@@ -1,0 +1,28 @@
+/* font
+##############################*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+$font-primary:'Inter',
+sans-serif;
+
+/* color
+##############################*/
+
+$orange:#f8841f;
+$primary:$orange;
+$blue-gray:#798eb3;
+$light-blue:#899bbd;
+
+/* links
+##############################*/
+
+$link-color: $orange;
+
+/* global
+##############################*/
+
+//$headings-margin-bottom:      $spacer * .5 !default;
+$headings-font-family: $font-primary;
+$headings-font-style: normal;
+$headings-font-weight: 600;
+$headings-color: $orange;

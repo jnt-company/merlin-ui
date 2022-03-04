@@ -1,0 +1,46 @@
+/* card
+##############################*/
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    svg {
+        fill: $secondary;
+    }
+    .card-icon {
+        background-color: $gray-100;
+        padding: 18px;
+        @media (max-width: 1400px) {
+            padding: 4px;
+        }
+    }
+}
+
+.card-header,
+.card-footer {
+    border-color: #ebeef4;
+    background-color: $white;
+    color: $blue-gray;
+    padding: 15px;
+}
+
+.card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    // a svg {
+    //     fill: $orange;
+    // }
+}
+
+.card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 0 20px 20px 20px;
+}
