@@ -12,6 +12,9 @@ $orange:#f8841f;
 $primary:$orange;
 $blue-gray:#798eb3;
 $light-blue:#899bbd;
+$soft-white:#ebeef4;
+$nav-hover-bg: #f6f9ff;
+$dropdown-element:#444444;
 
 /* links
 ##############################*/
@@ -21,7 +24,10 @@ $link-color: $orange;
 /* global
 ##############################*/
 
-//$headings-margin-bottom:      $spacer * .5 !default;
+// 1rem = root font-size 16px;
+$font-size-base: 1rem;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
 $headings-font-family: $font-primary;
 $headings-font-style: normal;
 $headings-font-weight: 600;

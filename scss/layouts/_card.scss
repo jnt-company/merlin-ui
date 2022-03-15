@@ -11,7 +11,7 @@
     }
     .card-icon {
         background-color: $gray-100;
-        padding: 18px;
+        padding: 16px;
         @media (max-width: 1400px) {
             padding: 4px;
         }
@@ -20,7 +20,7 @@
 
 .card-header,
 .card-footer {
-    border-color: #ebeef4;
+    border-color: $soft-white;
     background-color: $white;
     color: $blue-gray;
     padding: 15px;
@@ -28,17 +28,13 @@
 
 .card-title {
     padding: 20px 0 15px 0;
-    font-size: 18px;
     font-weight: 500;
-    // a svg {
-    //     fill: $orange;
-    // }
-}
-
-.card-title span {
-    color: #899bbd;
-    font-size: 14px;
-    font-weight: 400;
+    @include font-size(1.125);
+    span {
+        color: $light-blue;
+        font-weight: 400;
+        @include font-size(0.875);
+    }
 }
 
 .card-body {

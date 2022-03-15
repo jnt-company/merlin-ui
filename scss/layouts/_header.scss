@@ -30,59 +30,21 @@
 }
 
 
-/* Toggle Sidebar Button */
+/* toggle sidebar button */
 
 .header .toggle-sidebar-btn {
-    font-size: 32px;
     padding-left: 10px;
     cursor: pointer;
     color: $orange;
+    @include font-size(2rem);
     .search-bar {
         min-width: 360px;
         padding: 0 20px;
     }
 }
 
-@media (max-width: 1199px) {
-    .header .search-bar {
-        position: fixed;
-        top: 50px;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        box-shadow: 0px 0px 15px 0px rgba(1, 41, 112, 0.1);
-        background: white;
-        z-index: 9999;
-        transition: 0.3s;
-        visibility: hidden;
-        opacity: 0;
-        .search-bar-show {
-            top: 60px;
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-}
 
-.header .search-form {
-    width: 100%;
-    .search-form input {
-        border: 0;
-        font-size: 14px;
-        color: $orange;
-        border: 1px solid rgba(1, 41, 112, 0.2);
-        padding: 7px 38px 7px 8px;
-        border-radius: 3px;
-        transition: 0.3s;
-        width: 100%;
-    }
-    .search-form input:focus,
-    .search-form input:hover {
-        outline: none;
-        box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
-        border: 1px solid rgba(1, 41, 112, 0.3);
-    }
-}
+/* header nav */
 
 .header-nav {
     ul {
@@ -99,35 +61,35 @@
         max-height: 36px;
     }
     .nav-profile span {
-        font-size: 14px;
         font-weight: 600;
+        @include font-size(0.875);
     }
     .profile {
         min-width: 240px;
         padding-bottom: 0;
         .dropdown-header {
             h6 {
-                font-size: 18px;
                 margin-bottom: 0;
                 font-weight: 600;
-                color: #444444;
+                color: $dropdown-element;
+                @include font-size(1.125);
             }
             span {
-                font-size: 14px;
+                @include font-size(0.875);
             }
         }
         .dropdown-item {
-            font-size: 14px;
             padding: 10px 15px;
             transition: 0.3s;
+            @include font-size(0.875);
+            &:hover {
+                background-color: $nav-hover-bg;
+            }
             i {
                 margin-right: 10px;
-                font-size: 18px;
                 line-height: 0;
+                @include font-size(1.125);
             }
-        }
-        .dropdown-item:hover {
-            background-color: #f6f9ff;
         }
     }
 }
