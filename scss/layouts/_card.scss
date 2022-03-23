@@ -1,42 +1,47 @@
 /* card
 ##############################*/
 
-.card {
-    margin-bottom: 30px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-    svg {
-        fill: $secondary;
-    }
-    .card-icon {
-        background-color: $gray-100;
-        padding: 16px;
-        @media (max-width: 1400px) {
-            padding: 4px;
+.merlin-card {
+    .card {
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+        svg {
+            fill: $secondary;
+        }
+        .card-icon {
+            background-color: $gray-100;
+            padding: 16px;
+            @media (max-width: 1400px) {
+                padding: 4px;
+            }
         }
     }
-}
 
-.card-header,
-.card-footer {
-    border-color: $soft-white;
-    background-color: $white;
-    color: $blue-gray;
-    padding: 15px;
-}
-
-.card-title {
-    padding: 20px 0 15px 0;
-    font-weight: 500;
-    @include font-size(1.125);
-    span {
-        color: $light-blue;
-        font-weight: 400;
-        @include font-size(0.875);
+    .card-header,
+    .card-footer {
+        border-color: $soft-white;
+        background-color: $white;
+        color: $blue-gray;
+        padding: 15px;
     }
-}
 
-.card-body {
-    padding: 0 20px 20px 20px;
+    .card-title {
+        padding: 20px 0 15px 0;
+        font-weight: 500;
+        @include font-size(1.125);
+        span {
+            color: $light-blue;
+            font-weight: 400;
+            @include font-size(0.875);
+        }
+        a {
+            @extend .float-end;
+        }
+    }
+
+    .card-body {
+        padding: 0 20px 20px 20px;
+    }
 }
