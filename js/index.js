@@ -18,7 +18,7 @@ if (selectHeader) {
         }
     };
     window.addEventListener('load', headerScrolled);
-    onscroll(document, headerScrolled);
+    document.addEventListener('scroll', headerScrolled);
 }
 
 /* back to top */
