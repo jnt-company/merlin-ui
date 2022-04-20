@@ -36,7 +36,8 @@
             font-weight: 400;
             @include font-size(0.875);
         }
-        a {
+        a,
+        form {
             @extend .float-end;
         }
     }
