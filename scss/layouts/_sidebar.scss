@@ -80,22 +80,22 @@
         align-items: center;
         font-size: 15px;
         font-weight: 600;
-        color: $orange;
+        color: $primary;
         transition: 0.3;
         background: #f6f9ff;
         padding: 10px 15px;
         border-radius: 4px;
         &:hover {
-            color: $orange;
+            color: $primary;
             background: #f6f9ff;
             i {
-                color: $orange;
+                color: $primary;
             }
         }
         i {
             font-size: 16px;
             margin-right: 10px;
-            color: $orange;
+            color: $primary;
         }
     }
     .nav-link.collapsed {
@@ -126,14 +126,14 @@
             transition: 0.3s;
             &:hover,
             &:active {
-                color: $orange;
+                color: $primary;
             }
             i {
                 margin-right: 8px;
                 line-height: 0;
                 border-radius: 50%;
                 &:active {
-                    background-color: $orange;
+                    background-color: $primary;
                 }
             }
         }

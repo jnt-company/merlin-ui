@@ -15,7 +15,7 @@
     // }
     span {
         font-weight: 700;
-        color: $orange;
+        color: $primary;
         @include font-size(1.625rem);
     }
 }
@@ -25,24 +25,26 @@
     z-index: 997;
     height: 60px;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-    background: linear-gradient(-90deg, $gray-600 0%, $gray-800 100%);
+    background: linear-gradient(
+        -90deg,
+        $header-gradient-end 0%,
+        $header-gradient-start 100%
+    );
     padding-left: 20px;
 }
-
 
 /* toggle sidebar button */
 
 .header .toggle-sidebar-btn {
     padding-left: 10px;
     cursor: pointer;
-    color: $orange;
+    color: $primary;
     @include font-size(2rem);
     .search-bar {
         min-width: 360px;
         padding: 0 20px;
     }
 }
-
 
 /* header nav */
 

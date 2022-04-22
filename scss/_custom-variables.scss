@@ -2,24 +2,26 @@
 ##############################*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-$font-primary:'Inter',
-sans-serif;
+$font-primary: 'Inter', sans-serif;
 
 /* color
 ##############################*/
 
-$orange:#f8841f;
-$primary:$orange;
-$blue-gray:#798eb3;
-$light-blue:#899bbd;
-$soft-white:#ebeef4;
+$orange: #f8841f;
+$primary: $orange !default;
+$primary-background: $gray-200 !default;
+$blue-gray: #798eb3;
+$light-blue: #899bbd;
+$soft-white: #ebeef4;
 $nav-hover-bg: #f6f9ff;
-$dropdown-element:#444444;
+$dropdown-element: #444444;
+$header-gradient-start: $gray-600 !default;
+$header-gradient-end: $gray-800 !default;
 
 /* links
 ##############################*/
 
-$link-color: $orange;
+$link-color: $primary;
 
 /* global
 ##############################*/
@@ -31,4 +33,4 @@ $font-weight-bolder: 700;
 $headings-font-family: $font-primary;
 $headings-font-style: normal;
 $headings-font-weight: 600;
-$headings-color: $orange;
+$headings-color: $primary;
