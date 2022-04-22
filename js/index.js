@@ -1,4 +1,4 @@
-require('bootstrap/dist/js/bootstrap.js');
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 
 /* sidebar toggle */
 Array.from(document.getElementsByClassName('toggle-sidebar-btn')).forEach((e) =>
