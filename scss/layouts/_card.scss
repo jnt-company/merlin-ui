@@ -30,11 +30,11 @@
     .card-title {
         padding: 20px 0 15px 0;
         font-weight: 500;
-        @include font-size(1.125);
+        @include font-size(1.125rem);
         span {
             color: $light-blue;
             font-weight: 400;
-            @include font-size(0.875);
+            @include font-size(0.875rem);
         }
         a {
             @extend .ps-3;

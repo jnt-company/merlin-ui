@@ -64,7 +64,7 @@
     }
     .nav-profile span {
         font-weight: 600;
-        @include font-size(0.875);
+        @include font-size(0.875rem);
     }
     .profile {
         min-width: 240px;
@@ -74,23 +74,23 @@
                 margin-bottom: 0;
                 font-weight: 600;
                 color: $dropdown-element;
-                @include font-size(1.125);
+                @include font-size(1.125rem);
             }
             span {
-                @include font-size(0.875);
+                @include font-size(0.875rem);
             }
         }
         .dropdown-item {
             padding: 10px 15px;
             transition: 0.3s;
-            @include font-size(0.875);
+            @include font-size(0.875rem);
             &:hover {
                 background-color: $nav-hover-bg;
             }
             i {
                 margin-right: 10px;
                 line-height: 0;
-                @include font-size(1.125);
+                @include font-size(1.125rem);
             }
         }
     }
