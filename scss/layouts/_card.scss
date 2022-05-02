@@ -1,21 +1,19 @@
 /* card
 ##############################*/
 
-.merlin-card {
-    .card {
-        margin-bottom: 30px;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-        svg {
-            fill: $secondary;
-        }
-        .card-icon {
-            background-color: $gray-100;
-            padding: 16px;
-            @media (max-width: 1400px) {
-                padding: 4px;
-            }
+.card.merlin-card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    svg {
+        fill: $secondary;
+    }
+    .card-icon {
+        background-color: $gray-100;
+        padding: 16px;
+        @media (max-width: 1400px) {
+            padding: 4px;
         }
     }
 
@@ -29,12 +27,13 @@
 
     .card-title {
         padding: 20px 0 15px 0;
-        font-weight: 500;
-        @include font-size(1.125rem);
+        margin-bottom: 0.875rem;
+        font-weight: 600;
+        @include font-size(1.375rem);
         span {
             color: $light-blue;
             font-weight: 400;
-            @include font-size(0.875rem);
+            @include font-size(0.875);
         }
         a {
             @extend .ps-3;
@@ -44,7 +43,11 @@
             @extend .float-end;
         }
     }
-
+    .card-title:after {
+        content: ' | ';
+        font-weight: 400;
+        color: $light-blue;
+    }
     .card-body {
         padding: 0 20px 20px 20px;
     }
