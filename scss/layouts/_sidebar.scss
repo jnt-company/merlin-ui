@@ -1,6 +1,14 @@
 /* sidebar
 ##############################*/
 
+@mixin nav-link-active {
+    color: $primary;
+    background: $gray-200;
+    i {
+        color: $primary;
+    }
+}
+
 .sidebar {
     position: fixed;
     top: 60px;
@@ -12,7 +20,7 @@
     padding: 20px;
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: #aab7cf transparent;
+    scrollbar-color: $scrollbar transparent;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
     background-color: $white;
 }
@@ -30,7 +38,7 @@
 }
 
 .sidebar:-webkit-scrollbar-thumb {
-    background-color: #aab7cf;
+    background-color: $scrollbar;
 }
 
 @media (min-width: 1200px) {
@@ -60,6 +68,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
     li {
         padding: 0;
         margin: 0;
@@ -67,51 +76,61 @@
     }
     .nav-item {
         margin-bottom: 5px;
+        &.active {
+            .btn-group a,
+            .btn-group button,
+            > a {
+                @include nav-link-active;
+            }
+        }
     }
     .nav-heading {
         font-size: 11px;
         text-transform: uppercase;
-        color: #899bbd;
+        color: $nav-heading;
         font-weight: 600;
         margin: 10px 0 5px 15px;
+    }
+
+    .nav-link.collapsed {
+        color: $nav-link;
+        background: $nav-link-bg;
+        i {
+            color: $nav-link;
+        }
     }
     .nav-link {
         display: flex;
         align-items: center;
         font-size: 15px;
         font-weight: 600;
-        color: $primary;
+        color: $nav-link;
         transition: 0.3;
-        background: #f6f9ff;
+        background: $nav-link-bg;
         padding: 10px 15px;
         border-radius: 4px;
         &:hover {
-            color: $primary;
-            background: #f6f9ff;
-            i {
-                color: $primary;
-            }
+            @include nav-link-active;
         }
         i {
             font-size: 16px;
             margin-right: 10px;
-            color: $primary;
+            color: $nav-link;
         }
     }
-    .nav-link.collapsed {
-        color: #012970;
-        background: $white;
+    //custom toggle
+    .dropdown-toggle-split {
+        background-color: $nav-link-bg;
+        color: $nav-link;
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover,
+        &:active {
+            @include nav-link-active;
+        }
     }
-    .nav-link.collapsed i {
-        color: #899bbd;
-    }
-    .nav-link .bi-chevron-down {
-        margin-right: 0;
-        transition: transform 0.2s ease-in-out;
-    }
-    .nav-link:not(.collapsed) .bi-chevron-down {
-        transform: rotate(180deg);
-    }
+
     .nav-content {
         padding: 5px 0 0 0;
         margin: 0;
