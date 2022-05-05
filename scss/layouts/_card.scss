@@ -33,7 +33,7 @@
         span {
             color: $light-blue;
             font-weight: 400;
-            @include font-size(0.875);
+            @include font-size(0.875rem);
         }
         a {
             @extend .ps-3;
