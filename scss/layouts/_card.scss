@@ -46,6 +46,10 @@
             form {
                 @extend .float-end;
             }
+            form button.btn{
+                @extend .p-0;
+                @extend .mb-2;
+            }
         }
         > .card-title:after {
             content: ' | ';
