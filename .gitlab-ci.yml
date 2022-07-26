@@ -1,0 +1,9 @@
+include:
+    template: Code-Quality.gitlab-ci.yml
+
+code_quality:
+    services:
+    artifacts:
+        expose_as: 'Code Quality Report'
+        paths: [gl-code-quality-report.json]
+
