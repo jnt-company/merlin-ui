@@ -46,7 +46,7 @@
             form {
                 @extend .float-end;
             }
-            form button.btn{
+            form button.btn {
                 @extend .p-0;
                 @extend .mb-2;
             }
@@ -55,6 +55,19 @@
             content: ' | ';
             font-weight: 400;
             color: $light-blue;
+        }
+        .link-list-group {
+            form button.btn,
+            a {
+                margin-left: 0.3rem;
+                margin-right: 0.3rem;
+            }
+
+            a:first-of-type {
+                flex: 1 1 auto;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
         }
     }
 }
