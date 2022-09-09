@@ -1,5 +1,6 @@
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 require('./_help');
+require('jnt-image-toolkit/app.js');
 
 /* sidebar toggle */
 Array.from(document.getElementsByClassName('toggle-sidebar-btn')).forEach((e) =>
