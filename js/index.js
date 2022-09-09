@@ -1,5 +1,6 @@
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 require('./_help');
+require('./_confirm-modal');
 require('jnt-image-toolkit/app.js');
 
 /* sidebar toggle */
