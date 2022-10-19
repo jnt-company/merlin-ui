@@ -39,10 +39,10 @@
                 font-weight: 400;
                 @include font-size(0.875rem);
             }
-            a {
+            a:not(.card-title-link) {
                 @extend .ps-3;
             }
-            a,
+            a:not(.card-title-link),
             form {
                 @extend .float-end;
             }
