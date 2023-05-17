@@ -1,7 +1,8 @@
-window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
-require('./_help');
-require('./_confirm-modal');
-require('jnt-image-toolkit/app.js');
+import * as bootstrap from 'bootstrap';
+import './_confirm-modal';
+import './_copy';
+import './_help';
+import 'jnt-image-toolkit/app.js';
 
 /* sidebar toggle */
 Array.from(document.getElementsByClassName('toggle-sidebar-btn')).forEach((e) =>
