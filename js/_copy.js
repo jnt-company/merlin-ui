@@ -2,8 +2,6 @@ $('.text-copy, .slug-copy').on('keyup', function () {
     var $input = $(this);
     var val = $input.val().trim();
 
-    console.log('hi');
-
     if ($input.hasClass('text-copy')) {
         var $text = $('#' + $input.data('textid'));
         var maxlength = $text.attr('maxlength');
