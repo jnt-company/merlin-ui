@@ -39,7 +39,8 @@
                 font-weight: 400;
                 @include font-size(0.875rem);
             }
-            a:not(.card-title-link) {
+            a:not(.card-title-link),
+            form {
                 @extend .ps-3;
             }
             a:not(.card-title-link),
