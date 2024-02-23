@@ -1,9 +1,5 @@
 include:
-    template: Code-Quality.gitlab-ci.yml
-
-code_quality:
-    services:
-    artifacts:
-        expose_as: 'Code Quality Report'
-        paths: [gl-code-quality-report.json]
-
+  - project: 'jnt-company/gitlab-templates'
+    file:
+      - 'ci_templates/npm.yml'
+      - 'ci_templates/npm-audit.yml'
