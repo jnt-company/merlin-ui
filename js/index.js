@@ -1,4 +1,5 @@
 import * as bootstrap from 'bootstrap';
+window.bootstrap = bootstrap;
 import './_confirm-modal';
 import './_copy';
 import './_help';
