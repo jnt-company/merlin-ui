@@ -1,0 +1,96 @@
+@import 'bootstrap/scss/bootstrap';
+
+@import 'merlin/custom-variables';
+
+@import 'merlin/layouts';
+
+@import 'jnt-image-toolkit/app.scss';
+
+/* general
+##############################*/
+
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: $primary-background;
+}
+
+#main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}
+
+.footer {
+    padding: 20px 0;
+    @include font-size(0.875rem);
+}
+
+h1#page_title {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    @include font-size(1.5rem);
+}
+
+/* mixins
+##############################*/
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utilities
+##############################*/
+
+.bold {
+    font-weight: $font-weight-bold;
+}
+
+.small-text {
+    @include font-size(0.875rem);
+}
+
+.btn-close {
+    background-size: 25%;
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    //background: $orange;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    //color: $white;
+    .fas {
+        font-size: 40px;
+    }
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}

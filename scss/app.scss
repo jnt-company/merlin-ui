@@ -1,0 +1,14 @@
+#merlin-edit-container
+{
+	position: fixed;
+	bottom: 26px;
+	right: 20px;
+	width: 47px;
+	height: 41px;
+	opacity: .4;
+    z-index: 2;
+	a, img {border: none;}
+    &:hover {
+        opacity: 1;
+    }
+}
