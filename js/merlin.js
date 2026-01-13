@@ -1,5 +1,6 @@
 import * as bootstrap from 'bootstrap';
 window.bootstrap = bootstrap;
+
 import './merlin/_confirm-modal';
 import './merlin/_copy';
 import './merlin/_help';
@@ -40,3 +41,19 @@ if (backtotop) {
     window.addEventListener('load', toggleBacktotop);
     document.addEventListener('scroll', toggleBacktotop);
 }
+
+window.livewireWysiwyg = function(selector, saveContent){
+    tinymce.init({
+        selector: selector,
+        promotion: false,
+        setup: function (editor) {
+            editor.on('init change', function () {
+                editor.save();
+            });
+            editor.on('change', function (e) {
+                saveContent(editor.getContent());
+            });
+        }
+    });
+};
+
