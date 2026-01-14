@@ -53,7 +53,25 @@ window.livewireWysiwyg = function(selector, saveContent){
             editor.on('change', function (e) {
                 saveContent(editor.getContent());
             });
-        }
+        },
+        menubar: 'edit insert format table',
+        menu: {
+            format: {
+                title: 'Format',
+                items:
+                    'strikethrough superscript subscript | formats align | forecolor backcolor | code removeformat',
+            },
+        },
+        toolbar:
+        'bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image link',
+        toolbar_mode: 'floating',
+        plugins: 'code image link lists table',
+        default_link_target: '_blank',
+        image_caption: true,
+        custom_colors: false,
+        color_cols: 4,
+        relative_urls: false,
+        convert_urls: false,
     });
 };
 
